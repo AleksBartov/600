@@ -1,3 +1,52 @@
 .wrapper {
-  
+  width: 100vw;
+
+  &--nav {
+    position: fixed;
+    background-color: rgba(53, 69, 120, .8);
+  }
+
+  &__menu-icon {
+    width: 26px;
+    height: 19px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 3px;
+      background-color: snow;
+      transform-origin: 0 0;
+      transition: transform .3s ease-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 26px;
+      height: 3px;
+      background-color: #FFF;
+      transition: all .2s ease-out;
+      transform-origin: 0 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 26px;
+      height: 3px;
+      background-color: #FFF;
+      transform-origin: 0 100%;
+      transition: transform .3s ease-out;
+    }
+  }
 }

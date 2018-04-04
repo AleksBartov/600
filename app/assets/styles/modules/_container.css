@@ -1,0 +1,11 @@
+.container {
+  li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 3vw;
+
+    & a:hover {
+      color: #98ed47;
+    }
+  }
+}

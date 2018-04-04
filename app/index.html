@@ -3,53 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
     <title>ЭТАЛОН</title>
     <meta name="keywords" content="доставка нерудных материалов. песок. щебень">
     <meta name="description" content="доставляем нерудные материалы: песок, щебень">
     <link rel="stylesheet" href="temp/styles/styles.css">
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="wrapper wrapper--nav">
+        <nav class="container">
+          <ul>
+            <li><a href="#" >о компании</a></li>
+            <li><a href="#" >материалы</a></li>
+            <li><a href="#" >доставка</a></li>
+            <li><a href="#" >услуги</a></li>
+            <li><a href="#" >цены</a></li>
+            <li><a href="#" >акции</a></li>
+            <li><a href="#" >контакты</a></li>
+          </ul>
+        </nav>
 
-    <div class="section">
-      <img src="assets/images/2_trucks.jpg" alt="наши грузовики">
-    </div>
-
-
-    <div id="our-bosses" class="section">
-      <div class="wrapper">
-
-        <div class="row">
-          <div class="row__col row__col--4">
-            <img class="row__img--boss"src="assets/images/boss_a.jpg" alt="Александр">
-          </div>
-          <div class="row__col row__col--8">
-            <p>В нашей команде работают только настоящие профессионалы</p>
-          </div>
+        <div class="wrapper__menu-icon invisible">
+          <div class="wrapper__menu-icon__middle"></div>
         </div>
-
-        <div class="row">
-          <div class="row__col row__col--8">
-            <p>В нашей команде работают только настоящие профессионалы</p>
-          </div>
-          <div class="row__col row__col--4">
-            <img class="row__img--boss" src="assets/images/boss_m.jpg" alt="Марианна">
-          </div>
-        </div>
-
       </div>
+    </header>
+    <div>
+      <picture>
+        <source srcset="./assets/images/truck_large.jpg" media="(min-width: 1050px)">
+        <source srcset="./assets/images/truck_medium.jpg" media="(min-width: 570px)">
+        <source srcset="./assets/images/truck_small.jpg" media="(min-width: 330px)">
+        <img src="./assets/images/truck_smaller.jpg" alt="наш грузовик">
+      </picture>
     </div>
-    <div class="section">
-      <img src="assets/images/10_trucks.jpg" alt="наши грузовики">
-    </div>
-    <div class="section">
-
-
-    </div>
-    <div class="section">
-      <img src="assets/images/5_trucks.jpg" alt="наши грузовики">
-    </div>
-
     <footer></footer>
   </body>
 </html>

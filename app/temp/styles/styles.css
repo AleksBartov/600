@@ -343,6 +343,7 @@ template {
 
 body {
   color: #333;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -355,37 +356,81 @@ img {
 }
 
 a {
-  color: tomato;
-}
-
-.section {
-  margin: 0 30px;
+  color: snow;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .wrapper {
-  
+  width: 100vw;
 }
 
-.row {
-  width: 100%;
-  float: left;
-  font-size: 1.7rem;
-  background-color: tomato;
-}
+.wrapper--nav {
+    position: fixed;
+    background-color: rgba(53, 69, 120, .8);
+  }
 
-.row__col {
+.wrapper__menu-icon {
+    width: 26px;
+    height: 19px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+  }
+
+.wrapper__menu-icon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 3px;
+      background-color: snow;
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0;
+      transition: -webkit-transform .3s ease-out;
+      transition: transform .3s ease-out;
+      transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    }
+
+.wrapper__menu-icon__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 26px;
+      height: 3px;
+      background-color: #FFF;
+      transition: all .2s ease-out;
+      -webkit-transform-origin: 0 50%;
+              transform-origin: 0 50%;
+    }
+
+.wrapper__menu-icon::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 26px;
+      height: 3px;
+      background-color: #FFF;
+      -webkit-transform-origin: 0 100%;
+              transform-origin: 0 100%;
+      transition: -webkit-transform .3s ease-out;
+      transition: transform .3s ease-out;
+      transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    }
+
+.container li {
+    list-style: none;
     display: inline-block;
-    padding: 2rem 5rem;
+    padding-right: 3vw;
   }
 
-.row__col--4 {
-      width: 33%;
+.container li a:hover {
+      color: #98ed47;
     }
 
-.row__col--8 {
-      width: 66%;
-    }
-
-.row__img--boss {
-    border-radius: 100px;
-  }
+.invisible {
+  display: none;
+}
