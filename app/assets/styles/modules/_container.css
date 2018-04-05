@@ -1,11 +1,17 @@
 .container {
-  li {
-    list-style: none;
-    display: inline-block;
-    padding-right: 3vw;
+  display: none;
 
-    & a:hover {
-      color: #98ed47;
+  @mixin atMedium {
+    display: block;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 3vw;
+
+      & a:hover {
+        color: #98ed47;
+      }
     }
   }
 }
